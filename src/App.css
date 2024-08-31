@@ -1,38 +1,337 @@
-.App {
-  text-align: center;
+.options{
+    font-weight: 600;
+    font-family:'Lemonada', cursive;
+    margin-left: 4%;
+    cursor: pointer;
+    font-size: 1.4rem
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.options:hover{
+    color: #89C74A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.option-active{
+    color: #54a602;
+}
+
+.inputs{
+    border: none;
+    /* width: 50%; */
+    background-color: #00000000;
+    border-bottom: 2px solid green;
+    transition: border-color 0.5s;
+}
+
+.inputs:focus{
+    border-bottom-color: greenyellow;
+}
+
+.inputs::placeholder{
+    color: rgba(0, 0, 0, 0.522);
+}
+
+th{
+    color: #244602;
+    font-size: large;
+    /* text-align: center; */
+    padding: 5px;
+}
+
+.button{
+    margin-left: 40%;
+    background-color: #89C74A;
+    color: white;
   }
-}
+  .button:hover{
+    background-color: #FF6600;
+    color: white;
+  }
+  .buttons{
+    margin-left: 25%;
+    background-color: #89C74A;
+    color: white;
+  }
+  .buttons:hover{
+    background-color: #FF6600;
+    color: white;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  .contact_card{
+    margin-top: 15%;
+    margin-bottom: 5%;
+      border: 1px solid  rgb(144, 152, 144);
+      margin-left: 3%;
+  }
+  .contact_card:hover{
+    border: 1px solid  green;
+  }
+  .contact_card:hover .card_button{
+  background-color: #FF6600;
+  border-color: #FF6600;
+  }
+  .card_text:hover{
+    color: #FF6600;
+  }
+  .form:hover{
+    border-color: #89C74A;
+    box-shadow: #89C74A;
+  }
+  .formbutton{
+    background-color: #89C74A;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    margin-top: 2%;
+  }
+  .formbutton:hover{
+    color: white;
+    background-color: #FF6600;
+  }
+
+
+  .formbutton2{
+    background-color: #404839;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    margin-top: 2%;
+  }
+  .formbutton2:hover{
+    color: white;
+    background-color: #FF6600;
+  }
+
+  .slider_button{
+    background-color: #89C74A;
+    border-color: #89C74A;
   color: white;
+  
+  }
+  .slider_button:hover{
+    background-color: #FF6600;
+    color: white;
+    border-color: #FF6600;
+  }
+  .sliders_button{
+    color: black;
+    background-color: white;
+  }
+  .sliders_button:hover{
+    color: white;
+    background-color: red;
+  }
+  .sliderss_button{
+    background-color: #D08126;
+    color: white;
+    border-color: #D08126;
+  }
+  .sliderss_button:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+
+  .f1:hover{
+    background-color: #FF6600;
+    color: white;
+      }
+    
+      .cardbutton{
+        background-color: #FF6600;
+        color: white;
+      }
+      .cardbutton:hover{
+        background-color: #89C74A;
+        color: white;
+      }
+
+.fontt{
+        color: white;
+        }
+        .f11:hover{
+      background-color: #FF6600;
+      color: white;
+        }
+
+.veggies-fruits{
+  border-top-left-radius: 70%;
+  border-bottom-left-radius: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+#category_colors:hover{
+  transform: translateY(-10px);
+}
+#category_colors{
+  transition: transform 0.5s ease-in-out;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-success{
+  background-color: #89C74A;
+}
+.btn-success:hover{
+  background-color: #FF6600;
+}
+
+.indexcard:hover{
+  transform: translateY(-5px);
+}
+.indexcard{
+  transition: transform 0.5s ease-in-out;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Lemonada', cursive;
+}
+
+.sticked{
+  position: fixed;
+  z-index: 100;
+  background-color: wheat;
+  width: 100%;
+  padding-top: 2%;
+  top: 0;
+}
+
+.up_button{
+  position: fixed;
+  z-index: 101;
+  margin-left: 97%;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 100%;
+  margin-top: 26%;
+}
+.banner{
+margin-left: 70%;
+font-size: smaller;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:430px) {
+.banner{
+  margin-left: 0%;
+}
+}
+
+.index_card_image{
+  width: 250px;
+  height: 250px;
+}
+
+.category_card_image{
+  width: 150px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .index_card_image{
+    width: 200px;
+    height: 200px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .category_card_image{
+    width: 125px;
+    height: 125px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+
+  .index_card_image{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .category_card_image{
+    width: 90px;
+    height: 90px;
+  }
+
+}
+
+.ham{
+  display: none;
+}
+.cates{
+  display: block;
+}
+
+.category_circle_large{
+  display: inline-flex;
+}
+.category_circle_small{
+  display: none;
+}
+
+.slides{
+  font-size: small;
+}
+
+.special_head{
+  font-size: larger;
+  font-weight: 500;
+
+}
+
+.special_image{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .ham{
+    display: block;
+  }
+  .cates{
+    display: none;
+  }
+
+  .category_circle_large{
+    display: none;
+  }
+  .category_circle_small{
+    display: block;
+  }
+
+  .slides{
+    display: none;
+  }
+
+  .special_discount{
+    font-size: x-small;
+  }
+
+  .special_head{
+    font-size: small;
+  }
+
+  .special_image{
+    height: 250px;
+  }
+
+  .h4s{
+    font-size: small;
+  }
+
+
+
+}
+
+@media screen and (max-width: 427px) {
+
+  .special_discount{
+    font-size: x-small;
+    margin-top: -25%;
+
+  }
+
+}
+
+
+
+
+/* body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+} */
